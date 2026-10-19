@@ -51,3 +51,16 @@ A bullet list can be rendered as follows:
 Images can be added by uploading them to the repository in a /docs/assets/images folder, and then rendering using HTML via githubusercontent.com as shown in the example below.
 
 <img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSrcs.png">
+
+
+## **Progress Documentation**
+### **Week 1**
+Set up Github Pages for documentation during project creation and presentation of the final project
+Uploaded a demo for vertical stripes in different colours to board, got error message that the ratio is not suitable for display
+
+### **Week 2**
+Figured out that display wasn't working due to incorrect clock configuration
+Changed horizontal stripes to vertical stripes by replacing col variable with row variable
+Adjusted the ratio to ensure all stripes are being printed, none are out of range
+Played around with the colours and stripe sizes to figure out possibilities
+Came up with code to change individual pixels 
