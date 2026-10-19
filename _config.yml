@@ -1,9 +1,8 @@
 # Site settings
 title: System-on-Chip Design & Verification
 author:
-  name: Michelle Lynch
-  email: your-email@domain.com
-description: "A blog."
+  name: Finnja Bayer
+description: "SOC Project 2026."
 
 # Build settings
 remote_theme: jekyll/minima
