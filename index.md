@@ -16,7 +16,7 @@ I used Vivado to set up the project and work with the Verilog files. The design 
 <img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSum.png">
 ## **Template Code**
 The supplied code displayed differently coloured vertical stripes. It was split into two modules, VGATop and VGASync. VGATop includes the design code, while VGASync handles timing and keeps track of the displaying process, where one line is drawn at a time. 
-![Vivado project structure](docs/assets/images/ProjectStructure.png)
+![Vivado project structure](docs/assets/images/Structure.png)
 ### **Simulation**
 A testbench was provided to simulate the design in Vivado. I used this to test the supplied code, but did not get too comfortable with it which is why I relied more heavily on testing the code on the physical board.
 ### **Synthesis**
