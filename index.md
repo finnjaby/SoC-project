@@ -16,6 +16,7 @@ I used Vivado to set up the project and work with the Verilog files. The design 
 <img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSum.png">
 ### **Template Code**
 The supplied code displayed differently coloured vertical stripes. It was split into two modules, VGATop and VGASync. VGATop includes the design code, while VGASync handles timing and keeps track of the displaying process, where one line is drawn at a time. 
+![Vivado project structure](docs/assets/images/ProjectStructure.png)
 ### **Simulation**
 A testbench was provided to simulate the design in Vivado. I used this to test the supplied code, but did not get too comfortable with it which is why I relied more heavily on testing the code on the physical board.
 ### **Synthesis**
@@ -25,7 +26,9 @@ Synthesis is used to turn Verilog Code into a design that can be run on FPGA. I 
 My idea was to make a simplified version of a TV show intro. I wanted the screen to change through different images while including some of the characteristic animations.
 ### **Code Adaptation**
 I kept the main VGA setup from the supplied code and adapted it to create my animations. I used the row and column positions to draw the coloured areas and elements like rings and text, and used a state machine to move through the animations.
-The code also includes earlier versions of the design, which I left commented out. These show how the graphics started with a simpler colour cycle and opening/closing slit effect before being built into the longer final version. I used AI tools to help me understand and adapt parts of the code and to work through problems. I then verified the changes by trying them on the board.
+The code also includes earlier versions of the design, which I left commented out. These show how the graphics started with a simpler colour cycle and opening/closing slit effect before being built into the longer final version. 
+![Vivado comment_code](docs/assets/images/CodeComment.png)
+I used AI tools to help me understand and adapt parts of the code and to work through problems. I then verified the changes by trying them on the board.
 ### **Simulation**
 I had the testbenc available but mainlyrelied on the physical board to checkprogress,since I found the waveforms abstract and difficult to understand. Looking back I would spend more time on learning how to use the simulator because I wasted a lot of time by repeatedly uploading the code. 
 ### **Synthesis**
@@ -34,6 +37,7 @@ I ran synthesis on the adapted design, where I encountered multiple problems hav
 The final animation worked on the Basys3 board and displayed correctly on the monitor. It moved through the different stages and ten returned to the start, looping without needing to reset the board.
 ### **State Machine Diagram**
 I made this diagram to show the order of the different screens in the animation. It starts with three colour stages and then moves on to adding lines and rings before displaying the show title in a flashing manner.
+![State machine diagram](docs/assets/images/StateMachineDiagram.png)
 ### **Problems I ran into**
 At the beginning I had problems displaying the sample code to the monitor. I figured out that it was due to incorrect clock configuration. I compared my setup to the one of my classmates and fixed the issue.
 I also had issues with the animations at first since I was a state machine and a sub state machine, which changed the colour frames correctly but would only perform the animation on the first one.
