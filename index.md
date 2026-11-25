@@ -14,7 +14,7 @@ I used Vivado to set up the project and work with the Verilog files. The design 
 
 
 <img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSum.png">
-### **Template Code**
+## **Template Code**
 The supplied code displayed differently coloured vertical stripes. It was split into two modules, VGATop and VGASync. VGATop includes the design code, while VGASync handles timing and keeps track of the displaying process, where one line is drawn at a time. 
 ![Vivado project structure](docs/assets/images/ProjectStructure.png)
 ### **Simulation**
@@ -35,6 +35,10 @@ I had the testbenc available but mainlyrelied on the physical board to checkprog
 I ran synthesis on the adapted design, where I encountered multiple problems having to do with the changes I made to the file and its name, since Vivado was now unable to find it. I fixed this by keepig the old name, even though its not very descriptive of my personal project.
 ### **Demonstration**
 The final animation worked on the Basys3 board and displayed correctly on the monitor. It moved through the different stages and ten returned to the start, looping without needing to reset the board.
+<video width="100%" controls>
+  <source src="docs/assets/images/VGAProjectDemo.mp4" type="video/mp4">
+  Your browser does not support video playback.
+</video>
 ### **State Machine Diagram**
 I made this diagram to show the order of the different screens in the animation. It starts with three colour stages and then moves on to adding lines and rings before displaying the show title in a flashing manner.
 ![State machine diagram](docs/assets/images/StateMachineDiagram.png)
